@@ -1,11 +1,99 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Rob Long's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Rob Long</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+}
+.background {
+  width: 100%;
+  max-width: 610px;
+  min-height: 650px;
+  padding: 155px 20px 45px;
+  border-radius: 30px;
+  background:
+    radial-gradient(at 15% 15%, #c8d6e5, transparent 65%),
+    radial-gradient(at 90% 90%, #c8e8e8, transparent 55%),
+    #f2f8fa;
+}
+.card {
+  background: rgba(255,255,255,0.92);
+  border-radius: 30px;
+  padding: 17px;
+  box-shadow: 0 15px 35px rgba(30,60,80,0.06);
+}
+.inner {
+  border: 1px solid #e5edf3;
+  border-radius: 25px;
+  text-align: center;
+  padding: 52px 20px;
+}
+.label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #526b85;
+}
+h1 {
+  font-size: clamp(38px, 8vw, 58px);
+  letter-spacing: -2px;
+  color: #142338;
+  margin: 18px 0;
+}
+p {
+  color: #5a7089;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 470px;
+  margin: 0 auto;
+}
+.accent {
+  width: 76px;
+  height: 3px;
+  margin: 30px auto 34px;
+  background: linear-gradient(90deg,#365b7d,#6cd4d1);
+}
+.email {
+  display: inline-block;
+  padding: 17px 23px;
+  background: linear-gradient(110deg,#345c7d,#7297bf);
+  border-radius: 35px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 12px 24px rgba(30,60,90,0.18);
+}
+.email:hover {
+  filter: brightness(1.1);
+}
+</style>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>Hi, I'm Rob Long.</p>
-    <p>This is my first website hosted on GitHub.</p>
+  <main class="background">
+    <section class="card">
+      <div class="inner">
+        <div class="label">CONTACT</div>
+        <h1>Let's connect</h1>
+        <p>A simple place to reach me directly for
+        thoughtful, professional communication.</p>
+        <div class="accent"></div>
+        <a class="email" href="mailto:rob@roblong.net">
+          rob@roblong.net
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
