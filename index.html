@@ -4,9 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact Rob Long</title>
+<title>Rob Long</title>
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -15,13 +17,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 36px;
+  padding: 14px;
 }
 .background {
   width: 100%;
   max-width: 610px;
-  min-height: 650px;
-  padding: 155px 20px 45px;
+  min-height: 570px;
+  padding: 120px 20px 55px;
   border-radius: 30px;
   background:
     radial-gradient(at 15% 15%, #c8d6e5, transparent 65%),
@@ -38,7 +40,7 @@ body {
   border: 1px solid #e5edf3;
   border-radius: 25px;
   text-align: center;
-  padding: 52px 20px;
+  padding: 48px 20px;
 }
 .label {
   font-size: 12px;
@@ -53,7 +55,7 @@ h1 {
 }
 p {
   color: #5a7089;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
   max-width: 470px;
   margin: 0 auto;
@@ -78,16 +80,27 @@ p {
 .email:hover {
   filter: brightness(1.1);
 }
+@media (max-width: 480px) {
+  .background {
+    min-height: 480px;
+    padding: 70px 12px 35px;
+  }
+  .inner {
+    padding: 42px 12px;
+  }
+  .email {
+    font-size: 18px;
+  }
+}
 </style>
 </head>
 <body>
   <main class="background">
     <section class="card">
       <div class="inner">
-        <div class="label">CONTACT</div>
+        <div class="label">ROB LONG</div>
         <h1>Let's connect</h1>
-        <p>A simple place to reach me directly for
-        thoughtful, professional communication.</p>
+        <p>A very small website on a very large internet.</p>
         <div class="accent"></div>
         <a class="email" href="mailto:rob@roblong.net">
           rob@roblong.net
